@@ -7,14 +7,18 @@ public class Program {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int N = sc.nextInt();
+		int a,b;
+		a = sc.nextInt();
 		int soma = 0;
 		
-		for(int i=0; i<N; i++) {
-			soma += i;
+		while(sc.hasNextInt()) {
+			
+			b = sc.nextInt();
+			soma = a + b; 
+			System.out.println(soma);
+			a = sc.nextInt();
 		}
-		
-		System.out.println(soma);
+		sc.close();
 
 	}
 
